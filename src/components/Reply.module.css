@@ -1,0 +1,74 @@
+.typeAReply {
+  position: relative;
+  line-height: 135%;
+  display: inline-block;
+  min-width: 100px;
+}
+.chipsText,
+.chipsText1 {
+  line-height: 22px;
+  display: inline-block;
+}
+.chipsText {
+  position: relative;
+  font-weight: 300;
+  min-width: 18px;
+}
+.chipsText1 {
+  min-width: 16px;
+}
+.chipsText1,
+.chipsText2,
+.chipsText3 {
+  position: relative;
+  font-weight: 300;
+}
+.chipsText2 {
+  line-height: 22px;
+  display: inline-block;
+  min-width: 14px;
+}
+.chipsText3 {
+  align-self: stretch;
+  width: 16px;
+  line-height: 135%;
+  display: none;
+}
+.chips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--reply-icons);
+  font-family: var(--font-aboreto);
+}
+.reply,
+.replyInputContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.replyInputContainer {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 var(--padding-9xs);
+  gap: var(--gap-xl);
+}
+.reply {
+  background-color: var(--reply-bg);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+  text-align: center;
+  font-size: var(--chat-operator-quick-reply-size);
+  color: var(--reply-text-placeholder);
+  font-family: var(--chat-operator-quick-reply);
+}
+@media screen and (max-width: 450px) {
+  .replyInputContainer {
+    flex-wrap: wrap;
+  }
+}

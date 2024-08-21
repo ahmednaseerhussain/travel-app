@@ -1,0 +1,35 @@
+.name {
+  position: relative;
+  line-height: 103px;
+}
+.goalsChild {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.goals {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-gray-800);
+  font-family: var(--font-abeezee);
+}
+@media screen and (max-width: 1050px) {
+  .name {
+    font-size: var(--font-size-32xl);
+    line-height: 82px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .name {
+    font-size: var(--font-size-19xl);
+    line-height: 62px;
+  }
+}

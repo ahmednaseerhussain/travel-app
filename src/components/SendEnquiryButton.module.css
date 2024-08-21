@@ -1,0 +1,59 @@
+.sendEnquiry {
+  position: relative;
+  line-height: 103px;
+}
+.sendEnquiryWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xl-5) 0 0;
+  box-sizing: border-box;
+  min-width: 392px;
+  max-width: 100%;
+}
+.navArrow1Icon {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.sendEnquiryButton {
+  width: 742px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-gray-800);
+  font-family: var(--font-abeezee);
+}
+@media screen and (max-width: 1050px) {
+  .sendEnquiry {
+    font-size: var(--font-size-32xl);
+    line-height: 82px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .sendEnquiryWrapper {
+    flex: 1;
+    min-width: 100%;
+  }
+  .navArrow1Icon {
+    flex: 1;
+  }
+  .sendEnquiryButton {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sendEnquiry {
+    font-size: var(--font-size-19xl);
+    line-height: 62px;
+  }
+}

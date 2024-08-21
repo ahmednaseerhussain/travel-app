@@ -1,0 +1,66 @@
+.contactUs {
+  margin: 0;
+  width: 1193px;
+  position: relative;
+  font-size: inherit;
+  display: flex;
+  font-style: italic;
+  font-weight: 400;
+  font-family: inherit;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.contactUsWrapper {
+  text-align: center;
+  font-size: 128px;
+  color: var(--color-gray-800);
+  font-family: var(--font-abeezee);
+}
+.contactUsWrapper,
+.sendEnquiryButtonWrapper {
+  width: 1580px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.contactForm {
+  width: 100%;
+  position: relative;
+  background-color: #fffdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 300px var(--padding-xl);
+  box-sizing: border-box;
+  gap: 199px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .contactForm {
+    gap: 99px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .contactUs {
+    font-size: var(--font-size-32xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .contactForm {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contactUs {
+    font-size: var(--font-size-13xl);
+  }
+  .contactForm {
+    gap: var(--gap-6xl);
+  }
+}

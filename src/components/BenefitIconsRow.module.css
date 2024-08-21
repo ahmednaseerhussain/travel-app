@@ -1,0 +1,55 @@
+.vuesaxlineardollarCircleIcon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.vuesaxlineardollarCircleWrapper {
+  border-radius: var(--br-base);
+  background-color: var(--color-aliceblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl);
+}
+.competitivePrices {
+  position: relative;
+}
+.loremIpsumIsSimply {
+  align-self: stretch;
+  height: 63px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 160%;
+  color: var(--color-gray-600);
+  text-align: center;
+  display: inline-block;
+}
+.benefitIconsRow,
+.competitivePricesParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.competitivePricesParent {
+  align-self: stretch;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.benefitIconsRow {
+  width: 280px;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-500);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .competitivePrices {
+    font-size: var(--font-size-base);
+  }
+  .benefitIconsRow {
+    gap: var(--gap-5xl);
+  }
+}

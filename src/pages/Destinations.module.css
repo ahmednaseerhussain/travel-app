@@ -1,0 +1,109 @@
+.image7Icon {
+  width: 100%;
+  height: 736px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.getStart {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 11px;
+  display: inline-block;
+  font-family: var(--font-poppins);
+  color: var(--color-whitesmoke-200);
+  text-align: left;
+  min-width: 73px;
+}
+.destinationsInner,
+.getStartWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.getStartWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-lg-5) var(--padding-13xl);
+  background-color: var(--color-gray-700);
+  border-radius: var(--br-53xl);
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 1;
+}
+.getStartWrapper:hover {
+  background-color: var(--color-darkslategray-100);
+}
+.destinationsInner {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-22xl) 384px var(--padding-xl);
+}
+.vuesaxlinearsearchNormalIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.vuesaxlinearsearchNormalWrapper {
+  height: 56px;
+  width: 56px;
+  border-radius: var(--br-37xl);
+  background-color: var(--color-steelblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.destinationsChild,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.frameWrapper {
+  width: 236px;
+  border-radius: var(--br-53xl);
+  background-color: var(--reply-bg);
+  border: 1px solid var(--color-gainsboro-200);
+  padding: var(--padding-3xs) var(--padding-xl) var(--padding-3xs)
+    var(--padding-13xl);
+}
+.destinationsChild {
+  width: 1408px;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+}
+.bannerParent,
+.destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bannerParent {
+  align-self: stretch;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.destinations {
+  width: 100%;
+  position: relative;
+  align-items: flex-end;
+  padding: var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 450px) {
+  .destinationsInner {
+    padding-bottom: 250px;
+    box-sizing: border-box;
+  }
+}

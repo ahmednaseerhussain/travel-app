@@ -1,0 +1,285 @@
+.avatarItems,
+.avatarsRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.avatarItems {
+  align-self: stretch;
+  gap: var(--gap-171xl);
+}
+.avatarsRow {
+  width: 32px;
+  padding: var(--padding-2xl) 0 0;
+  box-sizing: border-box;
+}
+.hiThereHow {
+  position: relative;
+  line-height: 140%;
+  display: inline-block;
+  max-width: 260px;
+  white-space: nowrap;
+}
+.chatMessage {
+  border-radius: var(--br-3xs);
+  background-color: var(--operator-message-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-lg);
+  box-sizing: border-box;
+  max-width: 300px;
+  white-space: nowrap;
+}
+.chatBubbleContent,
+.imJustBrowsing {
+  font-size: var(--chat-operator-quick-reply-size);
+}
+.chatBubbleContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-3xs);
+  color: var(--operator-message-text);
+}
+.imJustBrowsing {
+  position: relative;
+  letter-spacing: -0.06px;
+  line-height: 140%;
+  font-family: var(--chat-operator-quick-reply);
+  color: var(--reply-bg);
+  text-align: left;
+  display: inline-block;
+  min-width: 123px;
+  max-width: 260px;
+}
+.replyItems {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-lgi);
+  background-color: var(--user-bg);
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 300px;
+  white-space: nowrap;
+}
+.replyItems:hover {
+  background-color: var(--color-mediumslateblue);
+}
+.mAgoSeen {
+  position: relative;
+  line-height: 16px;
+  display: inline-block;
+  min-width: 85px;
+}
+.replyItems1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.botReply,
+.botReplyContent,
+.replyContent,
+.userReply {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.replyContent {
+  width: 161px;
+  flex-direction: column;
+  gap: var(--gap-7xs);
+}
+.botReply,
+.botReplyContent,
+.userReply {
+  flex-direction: row;
+}
+.botReplyContent {
+  border: 0;
+  background-color: var(--operator-message-bg);
+  height: 116px;
+  width: 296px;
+  outline: 0;
+  border-radius: var(--br-3xs);
+  padding: var(--padding-base) var(--padding-lg);
+  box-sizing: border-box;
+  font-family: var(--chat-operator-quick-reply);
+  font-size: var(--chat-operator-quick-reply-size);
+  color: var(--operator-message-text);
+  max-width: 300px;
+}
+.botReply,
+.userReply {
+  align-self: stretch;
+}
+.userReply {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-base);
+}
+.botjustNow {
+  position: relative;
+  line-height: 16px;
+  display: inline-block;
+  min-width: 90px;
+}
+.avatarsContainer,
+.chatBubble,
+.conversationHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.chatBubble {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-7xs);
+  min-width: 222px;
+  font-size: var(--font-size-smi);
+  color: var(--reply-text-placeholder);
+  font-family: var(--chat-operator-quick-reply);
+}
+.avatarsContainer,
+.conversationHeader {
+  flex-direction: row;
+}
+.avatarsContainer {
+  width: 383px;
+  flex-wrap: wrap;
+  gap: var(--gap-3xs);
+}
+.conversationHeader {
+  align-self: stretch;
+}
+.howCanYou {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  max-width: 355px;
+}
+.howCanYouHelpMeWrapper {
+  border-radius: var(--br-7xs);
+  background-color: var(--quick-reply-bg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-xs) var(--padding-smi);
+  box-sizing: border-box;
+  max-width: 384px;
+  white-space: nowrap;
+}
+.quickRepliesInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.anotherQuickReply {
+  position: relative;
+  font-size: var(--chat-operator-quick-reply-size);
+  line-height: 20px;
+  font-family: var(--chat-operator-quick-reply);
+  color: var(--quick-reply-text);
+  text-align: right;
+  display: inline-block;
+  max-width: 255px;
+}
+.anotherQuickReplyWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-sm);
+  background-color: var(--quick-reply-bg);
+  border-radius: var(--br-7xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  max-width: 384px;
+  white-space: nowrap;
+}
+.anotherQuickReplyWrapper:hover {
+  background-color: var(--color-lavender-100);
+}
+.conversationFrame,
+.quickReplies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.quickReplies {
+  justify-content: flex-end;
+  padding: 0 0 0 var(--padding-170xl);
+  gap: var(--gap-3xs);
+  text-align: right;
+  font-size: var(--chat-operator-quick-reply-size);
+  color: var(--quick-reply-text);
+  font-family: var(--chat-operator-quick-reply);
+}
+.conversationFrame {
+  align-self: stretch;
+  background-color: var(--reply-bg);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-xl) var(--padding-3xl-8);
+  gap: var(--gap-58xl);
+}
+.line {
+  align-self: stretch;
+  height: 1.2px;
+  background-color: var(--color-whitesmoke-400);
+}
+.intercomWidget {
+  width: 570px;
+  box-shadow: var(--shadows-shadow-widget);
+  border-radius: var(--br-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-gold);
+  font-family: var(--font-abel);
+}
+@media screen and (max-width: 750px) {
+  .conversationFrame {
+    gap: var(--gap-19xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .anotherQuickReplyWrapper,
+  .howCanYouHelpMeWrapper {
+    max-width: 100%;
+  }
+  .quickReplies {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .conversationFrame {
+    gap: var(--gap-lgi);
+  }
+}
