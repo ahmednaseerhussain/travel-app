@@ -1,4 +1,5 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navigation1.module.css";
 
 export type Navigation1Type = {
@@ -33,19 +34,19 @@ const Navigation1: FunctionComponent<Navigation1Type> = ({
     >
       <div className={styles.navbar} style={navbarStyle}>
         <div className={styles.travelParent}>
-          <a className={styles.travel}>Travel</a>
+          <Link to="/" className={styles.travel}>Travel</Link>
           <nav className={styles.registerLink}>
             <nav className={styles.navLinks}>
-              <a className={styles.home}>Home</a>
-              <a className={styles.destinations} href="#">Destinations</a>
-              <a className={styles.home}>About</a>
-              <a className={styles.contact}>Contact</a>
-              <a className={styles.login}>Login</a>
+              <Link to="/" className={styles.home}>Home</Link>
+              <Link to="/destinations" className={styles.destinations}>Destinations</Link>
+              <Link to="/about" className={styles.home}>About</Link>
+              <Link to="/contact-form" className={styles.contact}>Contact</Link>
+              <Link to="/login" className={styles.login}>Login</Link>
             </nav>
           </nav>
         </div>
         <div className={styles.register}>
-          <a className={styles.register1}>Register</a>
+          <Link to="/register" className={styles.register1}>Register</Link>
         </div>
       </div>
     </header>
